@@ -20,8 +20,10 @@ public:
         memset(dp,-1,sizeof(dp));
 
         //case1 pehle ghar ko lele
+        
         int taking_1st=solve(nums,0,n-2);
- memset(dp,-1,sizeof(dp));
+        memset(dp,-1,sizeof(dp));
+
         //case2 pehla ghar nahi lia
         int taking_2nd = solve(nums,1,n-1);
 
