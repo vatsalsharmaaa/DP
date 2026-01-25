@@ -11,9 +11,7 @@ public:
         }
         if(p!=-1 && dp[idx][p]!=-1){    //p!=-1 code fat jayega vrna
             return dp[idx][p];
-
         }
-
         //take
         int take=0;
         if(p==-1||nums[idx]>nums[p]){
@@ -27,6 +25,8 @@ public:
 
          return max(take,skip);
     }
+
+
     int lengthOfLIS(vector<int>& nums) {
         memset(dp,-1,sizeof(dp));
          n=nums.size();
